@@ -11,9 +11,9 @@ import { URL_USERS } from '../../constants'
 
 const RegisterFormulary= () => {
   const initialValues={
-    name:'',
-    password:'',
     email:'',
+    password:'',
+    
   }
   const navigate = useNavigate()
   const users = useGet(URL_USERS);

@@ -2,7 +2,7 @@
 
 .footer-style{
   padding-top: 3rem;
-  height: 40vh;
+padding-bottom: 0%;
   background-color: var(--azure);
   font-family: var(--letra1);
   color: white;
