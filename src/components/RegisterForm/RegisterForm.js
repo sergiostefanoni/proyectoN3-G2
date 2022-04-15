@@ -1,7 +1,6 @@
 import { Form, Button} from "react-bootstrap";
 import { Alert } from 'react-bootstrap';
 import useForm from '../../hooks/useForm';
-import { UserContext } from '../../context/UserContext';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import useGet from '../../hooks/useGet';
@@ -38,7 +37,7 @@ const RegisterFormulary= () => {
         </Form.Text>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
+        <Form.Label>Passwordasdas</Form.Label>
         <Form.Control type="password" placeholder="Password" onKeyUp={handleKeyUp}/>
         <Form.Label>Repetir Password</Form.Label>
         <Form.Control type="password" placeholder="Password" onKeyUp={handleKeyUp}/>
