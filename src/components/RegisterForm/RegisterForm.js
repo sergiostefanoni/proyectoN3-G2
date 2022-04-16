@@ -1,11 +1,6 @@
 import { Form, Button} from "react-bootstrap";
 import { Alert } from 'react-bootstrap';
-import useForm from '../../hooks/useForm';
-import { UserContext } from '../../context/UserContext';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
-import useGet from '../../hooks/useGet';
-import { URL_USERS } from '../../constants'
 import { useState } from "react";
 import { validationRegister } from "../../helpers/Validations";
 import axiosClient from "../../config/axiosClient";

@@ -17,7 +17,7 @@ const Header = () => {
     }
     
     window.addEventListener('scroll', ()=>{
-      if (window.scrollY==0){
+      if (window.scrollY===0){
         setHeaderClass('header-nav-top')
       } else{
         setHeaderClass('header-nav-no-top')
@@ -52,6 +52,9 @@ const Header = () => {
         {user ? user.role ==='ADMIN'?(
             <>
           <Nav className="m-auto">
+          <Link to="/admin" className="nav-link">
+                    Administración
+                  </Link>
           </Nav>
           <Nav>
               <Link to="/" onClick={handleClick} className="nav-link">
@@ -62,8 +65,13 @@ const Header = () => {
         ) :(
           <>
           <Nav>
-          <Link to="/admin" className="nav-link">Administración</Link>
+          <Link to="/EncuestasCards" className="nav-link">Cargar Encuestas</Link>
             </Nav>
+            <Nav className="ms-auto">
+                  <Link to="/" onClick={handleClick} className="nav-link">
+                    Cerrar sesión
+                  </Link>
+                  </Nav>
             </>
         ) :(
           <Nav className="ms-auto">

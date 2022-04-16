@@ -5,7 +5,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-      <div fixed="bottom" className="w-100 text-center footer-style">
+      <div  className="w-100 text-center footer-style">
         <Container fluid>
           <Row>
             <Col xs={12} md={12} lg={4}>
