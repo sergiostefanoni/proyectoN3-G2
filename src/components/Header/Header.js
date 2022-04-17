@@ -46,10 +46,11 @@ const Header = () => {
   return (
     <Navbar collapseOnSelect expand="lg" variant="dark" className={headerClass}>
       <Container>
-      <Logo/>
+        <Link to="/" className="nav-link"> <Logo/></Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav ms-auto" />
         <Navbar.Collapse id="responsive-navbar-nav ">
-        {user ? user.role ==='ADMIN'?(
+        {user ? (
+          user.role ==='ADMIN'?(
             <>
           <Nav className="m-auto">
           <Link to="/admin" className="nav-link">
@@ -73,7 +74,8 @@ const Header = () => {
                   </Link>
                   </Nav>
             </>
-        ) :(
+        ) 
+        ):(
           <Nav className="ms-auto">
                 <Link to="/Login" className="nav-link">
                 Iniciar sesión
