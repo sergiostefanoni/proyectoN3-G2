@@ -64,7 +64,7 @@ const Header = () => {
         ) :(
           <>
           <Nav>
-          <Link to="/EncuestasCards" className="nav-link">Cargar Encuestas</Link>
+          <Link to="/EncuestasCards" className="nav-link">Encuestas</Link>
             </Nav>
             <Nav className="ms-auto">
                   <Link to="/" onClick={handleClick} className="nav-link">
